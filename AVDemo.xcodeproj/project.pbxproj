@@ -14,6 +14,13 @@
 		006238A91EE1CE4C002DD35B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 006238A71EE1CE4C002DD35B /* LaunchScreen.storyboard */; };
 		006238B41EE1CE4C002DD35B /* AVDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 006238B31EE1CE4C002DD35B /* AVDemoTests.swift */; };
 		006238BF1EE1CE4C002DD35B /* AVDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 006238BE1EE1CE4C002DD35B /* AVDemoUITests.swift */; };
+		006238CF1EE2902B002DD35B /* S01.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 006238CE1EE2902B002DD35B /* S01.mp3 */; };
+		006238D11EE29034002DD35B /* S02.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 006238D01EE29034002DD35B /* S02.mp3 */; };
+		006238D31EE2903E002DD35B /* S03.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 006238D21EE2903E002DD35B /* S03.mp3 */; };
+		006238D51EE290AA002DD35B /* AudioTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 006238D41EE290AA002DD35B /* AudioTableViewCell.swift */; };
+		006238D71EE29BC0002DD35B /* FileReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 006238D61EE29BC0002DD35B /* FileReader.swift */; };
+		006238DA1EE4824C002DD35B /* AVKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 006238D91EE4824C002DD35B /* AVKit.framework */; };
+		006238DC1EE48848002DD35B /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 006238DB1EE48848002DD35B /* AVFoundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +54,13 @@
 		006238BA1EE1CE4C002DD35B /* AVDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AVDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		006238BE1EE1CE4C002DD35B /* AVDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AVDemoUITests.swift; sourceTree = "<group>"; };
 		006238C01EE1CE4C002DD35B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		006238CE1EE2902B002DD35B /* S01.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = S01.mp3; sourceTree = "<group>"; };
+		006238D01EE29034002DD35B /* S02.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = S02.mp3; sourceTree = "<group>"; };
+		006238D21EE2903E002DD35B /* S03.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = S03.mp3; sourceTree = "<group>"; };
+		006238D41EE290AA002DD35B /* AudioTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioTableViewCell.swift; sourceTree = "<group>"; };
+		006238D61EE29BC0002DD35B /* FileReader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileReader.swift; sourceTree = "<group>"; };
+		006238D91EE4824C002DD35B /* AVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVKit.framework; path = System/Library/Frameworks/AVKit.framework; sourceTree = SDKROOT; };
+		006238DB1EE48848002DD35B /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +68,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				006238DC1EE48848002DD35B /* AVFoundation.framework in Frameworks */,
+				006238DA1EE4824C002DD35B /* AVKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +97,7 @@
 				006238B21EE1CE4C002DD35B /* AVDemoTests */,
 				006238BD1EE1CE4C002DD35B /* AVDemoUITests */,
 				0062389C1EE1CE4C002DD35B /* Products */,
+				006238D81EE4824C002DD35B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,12 +114,17 @@
 		0062389D1EE1CE4C002DD35B /* AVDemo */ = {
 			isa = PBXGroup;
 			children = (
+				006238D21EE2903E002DD35B /* S03.mp3 */,
+				006238D01EE29034002DD35B /* S02.mp3 */,
+				006238CE1EE2902B002DD35B /* S01.mp3 */,
 				0062389E1EE1CE4C002DD35B /* AppDelegate.swift */,
 				006238A01EE1CE4C002DD35B /* ViewController.swift */,
 				006238A21EE1CE4C002DD35B /* Main.storyboard */,
 				006238A51EE1CE4C002DD35B /* Assets.xcassets */,
 				006238A71EE1CE4C002DD35B /* LaunchScreen.storyboard */,
 				006238AA1EE1CE4C002DD35B /* Info.plist */,
+				006238D41EE290AA002DD35B /* AudioTableViewCell.swift */,
+				006238D61EE29BC0002DD35B /* FileReader.swift */,
 			);
 			path = AVDemo;
 			sourceTree = "<group>";
@@ -123,6 +145,15 @@
 				006238C01EE1CE4C002DD35B /* Info.plist */,
 			);
 			path = AVDemoUITests;
+			sourceTree = "<group>";
+		};
+		006238D81EE4824C002DD35B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				006238DB1EE48848002DD35B /* AVFoundation.framework */,
+				006238D91EE4824C002DD35B /* AVKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,7 +264,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				006238A91EE1CE4C002DD35B /* LaunchScreen.storyboard in Resources */,
+				006238CF1EE2902B002DD35B /* S01.mp3 in Resources */,
 				006238A61EE1CE4C002DD35B /* Assets.xcassets in Resources */,
+				006238D31EE2903E002DD35B /* S03.mp3 in Resources */,
+				006238D11EE29034002DD35B /* S02.mp3 in Resources */,
 				006238A41EE1CE4C002DD35B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -261,6 +295,8 @@
 			files = (
 				006238A11EE1CE4C002DD35B /* ViewController.swift in Sources */,
 				0062389F1EE1CE4C002DD35B /* AppDelegate.swift in Sources */,
+				006238D71EE29BC0002DD35B /* FileReader.swift in Sources */,
+				006238D51EE290AA002DD35B /* AudioTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -507,6 +543,7 @@
 				006238C51EE1CE4C002DD35B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		006238C61EE1CE4C002DD35B /* Build configuration list for PBXNativeTarget "AVDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -515,6 +552,7 @@
 				006238C81EE1CE4C002DD35B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		006238C91EE1CE4C002DD35B /* Build configuration list for PBXNativeTarget "AVDemoUITests" */ = {
 			isa = XCConfigurationList;
@@ -523,6 +561,7 @@
 				006238CB1EE1CE4C002DD35B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
